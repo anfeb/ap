@@ -60,7 +60,16 @@ let {
 } = setting
 
 pp_bot = fs.readFileSync(thumbnail)
-qris = fs.readFileSync(donasi)
+qris = fs.readFileSync(donasi) 
+
+
+async function startHisoka() {
+    const hisoka = makeWASocket({
+        logger: pino({ level: 'silent' }),
+        printQRInTerminal: true,
+        browser: ['Hisoka Multi Device','Safari','1.0.0'],
+        auth: state
+    })
 // language
 const  { ind } = require(`./language`)
 lang = ind //language

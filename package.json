@@ -1,14 +1,14 @@
 {
-  "name": "AlphabotMD",
+  "name": "anfebn",
   "version": "1.0.5",
-  "description": "Alpha Bot Multi Device, Only update in YouTube ZEEONE OFC",
-  "main": "zeeone.js",
+  "description": "RIAN",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "license": "MIT",
   "scripts": {
-    "start": "node zeeone.js"
+    "start": "node index.js"
   },
   "keywords": [
     "termux",

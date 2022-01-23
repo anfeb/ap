@@ -302,20 +302,7 @@ reply('invalid type, please contact the owner bot')
                 anu = wikimedia(text)
                 result = anu[Math.floor(Math.random(), anu.length)]
                 alpha.sendMessage(m.chat, { image: { url: result.image }, caption: `⭔ Title : ${result.title}\n⭔ Source : ${result.source}\n⭔ Media Url : ${result.image}` }, { quoted: m })
-            }
-            break
-            case 'hentai': {
-                reply(mess.wait)
-                anu = await hentai()
-                result = anu[Math.floor(Math.random(), anu.length)]
-                alpha.sendMessage(m.chat, { video: { url: result.video_1 }, caption: `⭔ Title : ${result.title}\n⭔ Category : ${result.category}\n⭔ Mimetype : ${result.type}\n⭔ Views : ${result.views_count}\n⭔ Shares : ${result.share_count}\n⭔ Source : ${result.link}\n⭔ Media Url : ${result.video_1}` }, { quoted: m })
-            }
-            break
-            case 'quotesanime': case 'quoteanime': {
-                reply(mess.wait)
-                anu = await quotesAnime()
-                result = anu[Math.floor(Math.random(), anu.length)]
-                alpha.sendMessage(m.chat, { text: `_${result.quotes}_\n\nBy *'${result.karakter}'*, ${result.anime}\n\n*_- ${result.up_at}_*` }, {quoted:m})
+            
             }
             break
             case 'tes': case 'runtime':
@@ -376,13 +363,13 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             var but = [
           {
             "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -408,23 +395,6 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
         ]
         await alpha.send5ButImg(from, lang.tos(ownernomer) , `© ${ownername}`,qris, but , { userJid: m.chat, quoted: m })
      break
-      
-//Random Anime
-				case 'cry':case 'kill':case 'hug':case 'pat':case 'lick':case 'kiss':case 'bite':case 'yeet':case 'neko':case 'bully':case 'bonk':case 'wink':case 'poke':case 'nom':case 'slap':case 'waifu':case 'smile':case 'wave':case 'awoo':case 'blush':case 'smug':case 'glomp':case 'happy':case 'dance':case 'cringe':case 'cuddle':case 'highfive':case 'shinobu':case 'megumin':case 'handhold':
-					reply(lang.wait())
-					axios.get(`https://api.waifu.pics/sfw/${command}`)
-					.then(({data}) => {
-						alpha.sendMediaAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
-
-
-					})
-					break
-				case 'waifu': case 'loli':
-					reply(lang.wait())
-					axios.get(`https://api.waifu.pics/sfw/waifu`)
-					.then(({data}) => {
-					alpha.sendMediaAsSticker(m.chat, data.url, m, { packname: global.packname, author: global.author })
-
 
 					})
 					break
@@ -760,13 +730,13 @@ if(m.isGroup){
 var but = [
           {
             "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -796,13 +766,13 @@ var but = [
          but = [
           {
             "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -832,13 +802,13 @@ var but = [
 var but = [
           {
             "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -870,13 +840,13 @@ case 'allmenu':
 	var but = [
           {
             "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -906,14 +876,14 @@ case 'ownercmd': case'ownermenu':
  var ownercmd = await getBuffer(flaming+'Owner Menu')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+           "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -939,55 +909,19 @@ case 'ownercmd': case'ownermenu':
         ]
         await alpha.send5ButLoc(from, lang.ownermenu(prefix) , `© ${ownername}`,ownercmd, but )
         break 
-    case 'animecmd': case 'animemenu':
- var animecmd = await getBuffer(flaming+'Anime Menu')
- var but = [
-          {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
-            }
-          },
-          {
-            "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
-              "url": `${myweb}`
-
-            }
-          },
-          {
-            "quickReplyButton": {
-              "displayText": "𝐷𝑜𝑛𝑎𝑠𝑖",
-"id": 'donate'
-            }
-          },
-          {
-            "quickReplyButton": {
-              "displayText": "𝑂𝑤𝑛𝑒𝑟",
-"id": 'owner'
-            }
-          },
-{
-            "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
-            }
-          }
-        ]
-        await alpha.send5ButLoc(from, lang.anime(prefix) , `© ${ownername}`,animecmd, but )
-        break 
+   
             case 'groupcmd': case 'groupmenu':
  var groupcmd = await getBuffer(flaming+'Group Menu')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+         "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -1017,9 +951,9 @@ case 'ownercmd': case'ownermenu':
  var searchcmd = await getBuffer(flaming+'Search Menu')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+          "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
@@ -1054,14 +988,14 @@ case 'ownercmd': case'ownermenu':
  var convertercmd = await getBuffer(flaming+'Convert Menu')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+           "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -1091,14 +1025,14 @@ case 'ownercmd': case'ownermenu':
  var stickercmd = await getBuffer(flaming+'Sticker Effect Menu')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+           "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -1129,13 +1063,13 @@ case 'ownercmd': case'ownermenu':
  var but = [
           {
             "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -1161,55 +1095,19 @@ case 'ownercmd': case'ownermenu':
         ]
         await alpha.send5ButLoc(from, lang.download(prefix) , `© ${ownername}`,downloadercmd, but )
         break 
-        case 'ranimecmd': case 'animemenu':
- var ranimecmd = await getBuffer(flaming+'Random Anime')
- var but = [
-          {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
-            }
-          },
-          {
-            "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
-              "url": `${myweb}`
-
-            }
-          },
-          {
-            "quickReplyButton": {
-              "displayText": "𝐷𝑜𝑛𝑎𝑠𝑖",
-"id": 'donate'
-            }
-          },
-          {
-            "quickReplyButton": {
-              "displayText": "𝑂𝑤𝑛𝑒𝑟",
-"id": 'owner'
-            }
-          },
-{
-            "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
-            }
-          }
-        ]
-        await alpha.send5ButLoc(from, lang.ranime(prefix) , `© ${ownername}`,ranimecmd, but )
-        break 
+      
         case 'othercmd': case 'orhermenu':
  var othercmd = await getBuffer(flaming+'Others Menu')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+          "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -1239,14 +1137,14 @@ case 'ownercmd': case'ownermenu':
  var textprocmd = await getBuffer(flaming+'Textpro Menu')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+          "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -1277,14 +1175,14 @@ case 'ownercmd': case'ownermenu':
  var thanksto = await getBuffer(flaming+'Contributors')
  var but = [
           {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
+           "urlButton": {
+              "displayText": "instagram 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
+              "url": `${instagram}`
             }
           },
           {
             "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
+              "displayText": "anfebn",              
               "url": `${myweb}`
 
             }
@@ -1309,44 +1207,6 @@ case 'ownercmd': case'ownermenu':
           }
         ]
         await alpha.send5ButLoc(from, lang.tqto(prefix) , `© ${ownername}`,thanksto, but )
-        }
-break 
-case 'nsfwcmd': case 'nsfwcommand':{
- var thanksto = await getBuffer(flaming+'Nsfw Menu')
- var but = [
-          {
-            "urlButton": {
-              "displayText": "𝑌𝑜𝑢𝑇𝑢𝑏𝑒 𝐶𝑟𝑒𝑎𝑡𝑜𝑟",
-              "url": `${youtube}`
-            }
-          },
-          {
-            "urlButton": {
-              "displayText": "𝑅𝑒𝑠𝑡 𝐴𝑃𝐼'𝑠",              
-              "url": `${myweb}`
-
-            }
-          },
-          {
-            "quickReplyButton": {
-              "displayText": "𝐷𝑜𝑛𝑎𝑠𝑖",
-"id": 'donate'
-            }
-          },
-          {
-            "quickReplyButton": {
-              "displayText": "𝑂𝑤𝑛𝑒𝑟",
-"id": 'owner'
-            }
-          },
-{
-            "quickReplyButton": {
-              "displayText": "𝐵𝑎𝑐𝑘 𝑇𝑜 𝐿𝑖𝑠𝑡",
-"id": 'command'
-            }
-          }
-        ]
-        await alpha.send5ButLoc(from, lang.nsfw(prefix) , `© ${ownername}`,thanksto, but )
         }
 break 
         case 'yts': case 'ytsearch':
